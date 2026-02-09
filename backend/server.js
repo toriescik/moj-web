@@ -63,3 +63,24 @@ app.get("/", (req, res) => {
 // Port
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => console.log(`🚀 Server beží na porte ${PORT}`));
+
+
+// --- Zobrazenie / stiahnutie CSV súborov ---
+app.get("/spravy.csv", (req, res) => {
+  res.download(csvFile); // stiahne správy
+});
+
+app.get("/newsletter.csv", (req, res) => {
+  res.download(newsletterFile); // stiahne newslettery
+});
+
+// Alternatíva – zobrazenie CSV priamo v prehliadači
+app.get("/spravy", (req, res) => {
+  const data = fs.readFileSync(csvFile, "utf8");
+  res.type("text/plain").send(data);
+});
+
+app.get("/newsletter", (req, res) => {
+  const data = fs.readFileSync(newsletterFile, "utf8");
+  res.type("text/plain").send(data);
+});
