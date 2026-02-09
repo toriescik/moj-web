@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="sk">
+
+<head>
+    <meta charset="UTF-8">
+    <title>PorubkaVideo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- HERO -->
+       <header>
+
+       <div class="hero">
+            <img src="profile.jpg" alt="Moja fotka" class="profile-img">
+            <div class="hero-text">
+                <h1>Kde ma nájdeš ? </h1>
+                <p class="subtitle">Neváhaj ma kontaktovať</p>
+            </div>
+            <div class="hero-social">
+                <a href="https://www.linkedin.com/in/tomas-oriescik/" target="_blank">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                <span class="divider">|</span>
+                <a href="https://www.instagram.com/tomasoriescik/" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+        </header>
+
+        <!-- MENU -->
+        <nav class="menu">
+            <a href="index.html">O mne</a>
+            <a href="Clanky.html">Články</a>
+            <a href="Lezenie.html">Lezenie</a>
+            <a href="Sebarozvoj.html">Sebarozvoj</a>
+            <a href="Technologie.html">Technológie</a>
+            <a href="Knihy.html">Knihy</a>
+            <a href="Fotografie.html" class="active">Fotografie</a>
+            <a href="Kontakt.html">Kontakt</a>
+        </nav>
+
+        <!-- SEKCIE -->
+
+        <section class="section">
+            <h2>Porubka video </h2>
+            <p> Video vzniklo z niekoľkých návštev Porubských skál</p>
+            <a href="images/porubkavideo.mp4" target="_blank">
+                <div class="video-thumbnail">
+                    <video muted>
+                        <source src="images/porubkavideo.mp4" type="video/mp4">
+                        Váš prehliadač nepodporuje video tag.
+                    </video>
+                    <div class="play-button">▶️</div>
+                </div>
+            </a>
+
+
+        </section>
+
+
+
+
+
+        <section class="section quote">
+            <p>„Citát alebo myšlienka pre túto podstránku.“</p>
+        </section>
+
+        <p class="back-link">
+            <a href="Fotografie.html">← späť na Fotografie</a>
+        </p>
+
+
+    </div>
+
+    <section class="section newsletter-section">
+        <h2>Odoberaj novinky</h2>
+
+        <form id="newsletter-form" class="newsletter-form">
+            <input type="email" name="email" placeholder="Tvoj e-mail" required>
+            <button type="submit">Prihlásiť</button>
+            <p id="newsletterStatus"></p>
+        </form>
+
+        <p class="newsletter-note">
+            Kliknutím na „Prihlásiť“ súhlasíš so spracovaním osobných údajov.
+        </p>
+
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/tomas-oriescik/" target="_blank" aria-label="LinkedIn">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="https://www.instagram.com/tomasoriescik/" target="_blank" aria-label="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+        </div>
+    </section>
+
+
+    <script async src="//www.instagram.com/embed.js"></script>
+    <script src="js/newsletter.js"></script>
+</body>
+
+</html>

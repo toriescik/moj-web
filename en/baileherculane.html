@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Photography</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- LANGUAGE SWITCHER -->
+    <div id="lang-switcher">
+        <a id="lang-link" href="#" title="Switch language">
+            <img id="lang-flag" src="" alt="Flag">
+        </a>
+    </div>
+
+    <div class="container">
+
+        <!-- HERO -->
+        <header>
+            <div class="hero">
+                <img src="/profile.jpg" alt="My photo" class="profile-img">
+                <div class="hero-text">
+                    <h1>Baile Herculane </h1>
+<p class="subtitle">Snapshots of my life</p>
+                </div>
+                <div class="hero-social">
+                    <a href="https://www.linkedin.com/in/tomas-oriescik/" target="_blank">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <span class="divider">|</span>
+                    <a href="https://www.instagram.com/tomasoriescik/" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+        </header>
+
+        <!-- MENU -->
+        <nav class="menu">
+            <a href="/en/index.html">About me</a>
+            <a href="/en/Articles.html">Articles</a>
+            <a href="/en/Climbing.html">Climbing</a>
+            <a href="/en/PersonalGrowth.html">Personal Growth</a>
+            <a href="/en/Technology.html">Technology</a>
+            <a href="/en/Books.html">Books</a>
+            <a href="/en/Photography.html" class="active">Photography</a>
+            <a href="/en/Contact.html">Contact</a>
+        </nav>
+
+        <!-- ///////////////////////////////////////////////////// -->
+
+        <h2>Baile Herculane</h2>
+        <div class="gallery1-grid">
+
+            <img class="gallery1-item" src="/images/archiv/rumunsko/rumunsko (1).JPG" alt="Romania"
+                data-caption="Climber in Baile">
+            <img class="gallery1-item" src="/images/archiv/rumunsko/rumunsko (2).JPG" alt="Romania"
+                data-caption="Climber in Baile">
+            <img class="gallery1-item" src="/images/archiv/rumunsko/rumunsko (3).JPG" alt="Romania"
+                data-caption="Dogs everywhere and climber">
+            <img class="gallery1-item" src="/images/archiv/rumunsko/rumunsko (4).JPG" alt="Romania"
+                data-caption="Scent of history">
+            <img class="gallery1-item" src="/images/archiv/rumunsko/rumunsko (5).jpg" alt="Romania"
+                data-caption="Rocks above town center">
+            <img class="gallery1-item" src="/images/archiv/rumunsko/rumunsko (6).jpg" alt="Romania"
+                data-caption="Trail start">
+            <img class="gallery1-item" src="/images/archiv/rumunsko/rumunsko (7).jpg" alt="Romania"
+                data-caption="Rocks">
+
+        </div>
+
+       
+
+        <!-- NEWSLETTER -->
+        <section class="section newsletter-section">
+            <h2>Subscribe to Updates</h2>
+            <form id="newsletter-form" class="newsletter-form">
+                <input type="email" name="email" placeholder="Your email" required>
+                <button type="submit">Subscribe</button>
+                <p id="newsletterStatus"></p>
+            </form>
+            <p class="newsletter-note">
+                By clicking “Subscribe” you agree to the processing of personal data.
+            </p>
+
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/tomas-oriescik/" target="_blank" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://www.instagram.com/tomasoriescik/" target="_blank" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+
+        </section>
+ <!-- LIGHTBOX -->
+        <div id="lightbox">
+            <span class="close">×</span>
+            <img class="lightbox-img">
+            <p class="lightbox-caption"></p>
+            <span class="prev">❮</span>
+            <span class="next">❯</span>
+        </div>
+      
+
+        <script src="/js/lightbox.js"></script>
+        <script src="/js/newsletter.js"></script>
+        <script src="/js/lang-switcher.js"></script>
+</body>
+
+</html>

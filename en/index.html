@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>About Me</title>
+    <!-- ABSOLUTE PATHS TO CSS -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+    
+    <!-- LANGUAGE SWITCHER -->
+    <div id="lang-switcher">
+        <a id="lang-link" href="#" title="Switch language">
+            <img id="lang-flag" src="" alt="Flag">
+        </a>
+    </div>
+
+    <div class="container">
+
+        <!-- HERO -->
+        <header>
+            <div class="hero">
+                <img src="/profile.jpg" alt="My photo" class="profile-img">
+                <div class="hero-text">
+                    <h1>Tomáš Orieščik</h1>
+                    <p class="subtitle">I think, create, study.</p>
+                </div>
+                <div class="hero-social">
+                    <a href="https://www.linkedin.com/in/tomas-oriescik/" target="_blank">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <span class="divider">|</span>
+                    <a href="https://www.instagram.com/tomasoriescik/" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+        </header>
+
+        <!-- MENU -->
+        <nav class="menu">
+            <a href="/en/index.html" class="active">About Me</a>
+            <a href="/en/Articles.html">Articles</a>
+            <a href="/en/Climbing.html">Climbing</a>
+            <a href="/en/PersonalGrowth.html">Personal Growth</a>
+            <a href="/en/Technology.html">Technology</a>
+            <a href="/en/Books.html">Books</a>
+            <a href="/en/Photography.html">Photography</a>
+            <a href="/en/Contact.html">Contact</a>
+        </nav>
+
+        <!-- BANNER -->
+        <section class="fullwidth-banner banner-img-1">
+            <div class="banner-overlay">
+                <div class="banner-content">
+                    <h2>Who am I?</h2>
+                    <p>I am a person who enjoys climbing, ideas, technology, and creation. This website is my personal space.</p>
+                    <a href="#whatIDo" class="banner-btn">See more</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION: WHAT I DO -->
+        <section class="section about-target" id="whatIDo">
+            <h2>What I do</h2>
+            <ul class="intro-list">
+                <li><a href="#climbing">Climbing</a></li>
+                <li><a href="#technology">Technology</a></li>
+                <li><a href="#personalGrowth">Personal Growth</a></li>
+                <li><a href="#writing">Writing</a></li>
+                <li><a href="#learningNewThings">Learning New Things</a></li>
+            </ul>
+        </section>
+
+        <section class="section quote">
+            <p>"It is hard to live lightly."</p>
+        </section>
+
+        <!-- CLIMBING -->
+        <section class="section about-target" id="climbing">
+            <h2>Climbing</h2>
+            <img src="/images/menulezenie.jpg" alt="Climbing on rocks" class="section-cover gallery-item">
+            <p>
+                Climbing for me is a combination of movement, concentration, and being in nature.
+                I practice rock climbing, mountain climbing, bouldering, and indoor climbing. I have been doing this for several years.
+                Climbing gives me the greatest feeling of truly living, freedom, fulfillment, and deep introspection.
+                Throughout my life, I had the opportunity to climb in various places, which allowed me to see and experience the grandeur of nature.
+                Climbing taught me to perceive myself and the world differently.
+                Learn more about climbing <a href="/en/Climbing.html" class="btn">See more</a>
+            </p>
+        </section>
+
+        <!-- TECHNOLOGIES -->
+        <section class="section about-target" id="technology">
+            <h2>Technology</h2>
+            <img src="/images/technologie.jpg" alt="Technologies" class="section-cover gallery-item">
+            <p>
+                Technologies have become an inseparable part of everyday life. I see IT as the future. 
+                I am constantly learning and deepening my knowledge in IT fields. The image shows the portfolio of technologies I have experience with.
+                Currently, I am working on Java development and my personal website using HTML/CSS.
+                Want to see more of my projects? 
+                <a href="/en/Technology.html" class="btn">See more</a>
+            </p>
+        </section>
+
+        <!-- PERSONAL GROWTH -->
+        <section class="section about-target" id="personalGrowth">
+            <h2>Personal Growth</h2>
+            <img src="/images/menusebarozvoj.jpg" alt="Personal growth" class="section-cover gallery-item">
+            <p>
+                Vision, goals, and ideas have given me a new perspective on life. How to move forward, overcome obstacles, and be a better person.
+                Many known and unknown authors, books, podcasts, and people influenced me along the way.
+                Learn more about personal growth <a href="/en/PersonalGrowth.html" class="btn">See more</a>
+            </p>
+        </section>
+
+        <!-- WRITING -->
+        <section class="section about-target" id="writing">
+            <h2>Writing</h2>
+            <img src="/images/menupisanie.jpg" alt="Writing" class="section-cover gallery-item">
+            <p>
+                Writing has become an escape for me, where I can express my thoughts. I often read and write.
+                The texts deal with the past, present, and future. I focus on the present above all.
+                I also cover professional topics about technologies that interest me.
+                See more of my articles <a href="/en/Articles.html" class="btn">See more</a>
+            </p>
+        </section>
+
+        <!-- LEARNING NEW THINGS -->
+        <section class="section about-target" id="learningNewThings">
+            <h2>Learning New Things</h2>
+            <img src="/images/menuucenie.jpg" alt="Learning" class="section-cover gallery-item">
+            <p>
+                Everyday life shows us that it is important to stay present and educated. Learning new things is an important daily habit,
+                without which one cannot grow. I constantly follow trends, read books, and expand my knowledge to apply it to things I am interested in.
+                Books that influenced me on my journey? 
+                <a href="/en/Books.html" class="btn">See more</a>
+            </p>
+        </section>
+
+    </div> <!-- END CONTAINER -->
+
+    <!-- NEWSLETTER -->
+    <section class="section newsletter-section">
+        <h2>Subscribe to updates</h2>
+        <form id="newsletter-form" class="newsletter-form">
+            <input type="email" name="email" placeholder="Your email" required>
+            <button type="submit">Subscribe</button>
+            <p id="newsletterStatus"></p>
+        </form>
+        <p class="newsletter-note">
+            By clicking “Subscribe”, you agree to the processing of personal data.
+        </p>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/tomas-oriescik/" target="_blank" aria-label="LinkedIn">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="https://www.instagram.com/tomasoriescik/" target="_blank" aria-label="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- LIGHTBOX -->
+    <div id="lightbox">
+        <span class="close">×</span>
+        <img class="lightbox-img">
+        <p class="lightbox-caption"></p>
+        <span class="prev">❮</span>
+        <span class="next">❯</span>
+    </div>
+
+    <!-- JAVASCRIPT -->
+    <script src="/js/lightbox.js"></script>
+    <script src="/js/newsletter.js"></script>
+    <script src="/js/banner-animations.js"></script>
+    <script src="/js/lang-switcher.js"></script>
+
+</body>
+
+</html>

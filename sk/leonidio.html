@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="sk">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Fotografie</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+     <!-- LANGUAGE SWITCHER -->
+    <div id="lang-switcher">
+        <a id="lang-link" href="#" title="Switch language">
+            <img id="lang-flag" src="" alt="Flag">
+        </a>
+    </div>
+
+    <div class="container">
+
+        <!-- HERO -->
+     <header>
+
+       <div class="hero">
+            <img src="/profile.jpg" alt="Moja fotka" class="profile-img">
+            <div class="hero-text">
+                <h1>Leonidio </h1>
+                 <p class="subtitle">Zábery z môjho života</p>
+            </div>
+            <div class="hero-social">
+                <a href="https://www.linkedin.com/in/tomas-oriescik/" target="_blank">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                <span class="divider">|</span>
+                <a href="https://www.instagram.com/tomasoriescik/" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+        </header>
+
+        <!-- MENU -->
+        <nav class="menu">
+            <a href="/sk/index.html">O mne</a>
+            <a href="/sk/Clanky.html">Články</a>
+            <a href="/sk/Lezenie.html">Lezenie</a>
+            <a href="/sk/Sebarozvoj.html">Sebarozvoj</a>
+            <a href="/sk/Technologie.html">Technológie</a>
+            <a href="/sk/Knihy.html">Knihy</a>
+            <a href="/sk/Fotografie.html" class="active">Fotografie</a>
+            <a href="/sk/Kontakt.html">Kontakt</a>
+        </nav>
+        <!-- ///////////////////////////////////////////////////// -->
+
+        <h2>Leonidio</h2>
+
+
+        <div class="gallery1-grid">
+
+            <img class="gallery1-item" src="/images/archiv/leonidio/leonidio (7).JPEG" alt="leonidio"
+                data-caption="Východ slnka cestou na skaly">
+            <img class="gallery1-item" src="/images/archiv/leonidio/leonidio (6).JPEG" alt="leonidio"
+                data-caption="Ráno pri Sogndal">
+            <img class="gallery1-item" src="/images/archiv/leonidio/leonidio (8).JPEG" alt="leonidio"
+                data-caption="Ráno pri Sogndal">
+            <img class="gallery1-item" src="/images/archiv/leonidio/leonidio (9).JPEG" alt="leonidio"
+                data-caption="Náš obľúbený sektor v Leonidiu - reštika ">
+            <img class="gallery1-item" src="/images/archiv/leonidio/leonidio (10).JPEG" alt="leonidio"
+                data-caption="Vianočný stromček v centre">
+            <img class="gallery1-item" src="/images/archiv/leonidio/leonidio (11).JPEG" alt="leonidio"
+                data-caption="Rýbárska ľoď a východ slnka">
+            <img class="gallery1-item" src="/images/archiv/leonidio/leonidio (12).JPEG" alt="leonidio"
+                data-caption="Pobrežie">
+            <img class="gallery1-item" src="/images/archiv/leonidio/leonidio (13).JPEG" alt="leonidio"
+                data-caption="Cesta k sektoru King of Thrones">
+            <img class="gallery1-item" src="/images/archiv/leonidio/leonidio (14).JPEG" alt="leonidio"
+                data-caption="Pohľad z King of Thrones">
+            <img class="gallery1-item" src="/images/archiv/leonidio/leonidio (15).JPEG" alt="leonidio"
+                data-caption="King Of Throners">
+            <img class="gallery1-item" src="/images/archiv/leonidio/leonidio (17).JPEG" alt="leonidio"
+                data-caption="Východ slnka">
+            <img class="gallery1-item" src="/images/archiv/leonidio/leonidio (18).JPEG" alt="leonidio"
+                data-caption="Cesta Tufa Laison v sektore Namaste">
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+        <!-- LIGHTBOX -->
+        <div id="lightbox">
+            <span class="close">×</span>
+            <img class="lightbox-img">
+            <p class="lightbox-caption"></p>
+            <span class="prev">❮</span>
+            <span class="next">❯</span>
+        </div>
+
+        <section class="section newsletter-section">
+            <h2>Odoberaj novinky</h2>
+            <form id="newsletter-form" class="newsletter-form">
+                <input type="email" name="email" placeholder="Tvoj e-mail" required>
+                <button type="submit">Prihlásiť</button>
+                <p id="newsletterStatus"></p>
+            </form>
+            <p id="newsletter-form" class="newsletter-note">
+                Kliknutím na „Prihlásiť“ súhlasíš so spracovaním osobných údajov.
+            </p>
+
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/tomas-oriescik/" target="_blank" aria-label="LinkedIn">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+                <a href="https://www.instagram.com/tomasoriescik/" target="_blank" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+
+
+
+            <div id="lightbox">
+                <span class="close">×</span>
+                <img class="lightbox-img">
+                <p class="lightbox-caption"></p>
+                <span class="prev">❮</span>
+                <span class="next">❯</span>
+            </div>
+
+            <script src="/js/lightbox.js"></script>
+            <script src="/js/newsletter.js"></script>
+             <script src="/js/lang-switcher.js"></script>
+
+</body>
+
+</html>

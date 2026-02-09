@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="sk">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Fotografie</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+  <!-- LANGUAGE SWITCHER -->
+<div id="lang-switcher">
+    <a id="lang-link" href="#" title="Switch language">
+        <img id="lang-flag" src="" alt="Flag">
+    </a>
+</div>
+<body>
+
+    <div class="container">
+
+        <!-- HERO -->
+        <header>
+
+       <div class="hero">
+            <img src="/profile.jpg" alt="Moja fotka" class="profile-img">
+            <div class="hero-text">
+                <h1>Fotky </h1>
+                <p class="subtitle">Zábery z môjo života</p>
+            </div>
+            <div class="hero-social">
+               <a href="https://www.linkedin.com/in/tomas-oriescik/" target="_blank">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                <span class="divider">|</span>
+                <a href="https://www.instagram.com/tomasoriescik/" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+        </header>
+
+        <!-- MENU -->
+        <nav class="menu">
+            <a href="/sk/index.html">O mne</a>
+            <a href="/sk/Clanky.html">Články</a>
+            <a href="/sk/Lezenie.html">Lezenie</a>
+            <a href="/sk/Sebarozvoj.html">Sebarozvoj</a>
+            <a href="/sk/Technologie.html">Technológie</a>
+            <a href="/sk/Knihy.html">Knihy</a>
+            <a href="/sk/Fotografie.html" class="active">Fotografie</a>
+            <a href="/sk/Kontakt.html">Kontakt</a>
+        </nav>
+
+        <!-- Citát -->
+        <section class="section quote">
+            <p>„Je len jeden spôsob ako zastaviť čas; fotografie.“</p>
+        </section>
+
+        <section class="albums">
+
+            <p><span class="highlight1">Archív mojich fotografií z chvíľ, ktoré mi bolo dopriate zažiť.</span></p> <br>
+
+            <div class="album-grid">
+                <a href="/sk/norsko.html" class="album-card">
+                    <img src="/images/archiv/norsko.JPEG" alt="norsko">
+                    <div class="album-info">
+                        <span class="album-category">PRÍRODA</span>
+                        <h3>Nórsko →</h3>
+                    </div>
+                </a>
+
+               <!-- <a href="/sk/trollstigen.html" class="album-card">
+                    <img src="/images/archiv/trollstigen.JPEG" alt="trollstigen">
+                    <div class="album-info">
+                        <span class="album-category">PRÍRODA</span>
+                        <h3>Trollstigen →</h3>
+                    </div>
+                </a>-->
+
+                <a href="/sk/leonidio.html" class="album-card">
+                    <img src="/images/archiv/leonidio.JPEG" alt="leonidio">
+                    <div class="album-info">
+                        <span class="album-category">LEZENIE</span>
+                        <h3>Leonidio →</h3>
+                    </div>
+                </a>
+
+
+                <a href="/sk/baileherculane.html" class="album-card">
+                    <img src="/images/archiv/baileherculane.jpg" alt="baileherculane">
+                    <div class="album-info">
+                        <span class="album-category">LEZENIE</span>
+                        <h3>Baile Herculane →</h3>
+                    </div>
+                </a>
+
+                <a href="/sk/ateny.html" class="album-card">
+                    <img src="/images/archiv/ateny.JPEG" alt="ateny">
+                    <div class="album-info">
+                        <span class="album-category">CESTOVANIE</span>
+                        <h3>Atény →</h3>
+                    </div>
+                </a>
+
+                <a href="/sk/priroda.html" class="album-card">
+                    <img src="/images/archiv/priroda.JPEG" alt="prirorda">
+                    <div class="album-info">
+                        <span class="album-category">PRÍRODA</span>
+                        <h3>Príroda →</h3>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+
+        <!--
+
+     SEKCIE 
+    <section class="section">
+        <h2>Porúbka 25</h2>
+        <p>jar v Porúbke</p>
+        <div class="photo-grid">
+            <img src="images/foto1.jpg" alt="Prvé krôčky" class="gallery-item">
+            <img src="images/foto2.jpg" alt="Prvé krôčky" class="gallery-item">
+        </div>
+    </section>
+
+    <section class="section">
+        <h2>Nórsko25</h2>
+        <article class="photo-article">
+            <p>7 mesiacov života v Nórsku.</p>
+            <a href="Norsko25.html" class="btn">Pozri ďalej</a>
+        </article>
+    </section>
+
+    <section class="section">
+        <h2>Video Porúbka</h2>
+        <article class="photo-article">
+            <p>sezóná  v Porúbke</p>
+            <a href="Porubka_Video.html"class="btn">Pozri ďalej→</a>
+        </article>
+    </section>
+
+    <section class="section quote">
+        <p>„Citát alebo myšlienka pre túto podstránku.“</p>
+    </section>
+
+</div>
+-->
+
+
+
+        <!-- LIGHTBOX -->
+        <div id="lightbox">
+            <span class="close">&times;</span>
+            <span class="prev">&#10094;</span>
+            <img class="lightbox-img" src="">
+            <span class="next">&#10095;</span>
+        </div>
+
+        <section class="section newsletter-section">
+            <h2>Odoberaj novinky</h2>
+            <form id="newsletter-form" class="newsletter-form">
+                <input type="email" name="email" placeholder="Tvoj e-mail" required>
+                <button type="submit">Prihlásiť</button>
+                <p id="newsletterStatus"></p>
+            </form>
+            <p id="newsletter-form" class="newsletter-note">
+                Kliknutím na „Prihlásiť“ súhlasíš so spracovaním osobných údajov.
+            </p>
+
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/tomas-oriescik/" target="_blank" aria-label="LinkedIn">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+                <a href="https://www.instagram.com/tomasoriescik/" target="_blank" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+
+
+
+            <div id="lightbox">
+                <span class="close">×</span>
+                <img class="lightbox-img">
+                <p class="lightbox-caption"></p>
+                <span class="prev">❮</span>
+                <span class="next">❯</span>
+            </div>
+
+            <script src="/js/lightbox.js"></script>
+            <script src="/js/newsletter.js"></script>
+               <script src="/js/lang-switcher.js"></script>
+</body>
+
+</html>

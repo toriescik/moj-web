@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="sk">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Knihy</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+    <div id="lang-switcher">
+        <a id="lang-link" href="#" title="Switch language">
+            <img id="lang-flag" src="" alt="Flag">
+        </a>
+    </div>
+
+    <div class="container">
+
+        <!-- HERO -->
+       <header>
+
+       <div class="hero">
+            <img src="/profile.jpg" alt="Moja fotka" class="profile-img">
+            <div class="hero-text">
+                <h1>Knihy </h1>
+                <p class="subtitle">Literatúra, ktorá ma ovplyvnila</p>
+            </div>
+            <div class="hero-social">
+                <a href="https://www.linkedin.com/in/tomas-oriescik/" target="_blank">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                <span class="divider">|</span>
+                <a href="https://www.instagram.com/tomasoriescik/" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+        </header>
+
+        <!-- MENU -->
+        <nav class="menu">
+            <a href="/sk/index.html">O mne</a>
+            <a href="/sk/Clanky.html">Články</a>
+            <a href="/sk/Lezenie.html">Lezenie</a>
+            <a href="/sk/Sebarozvoj.html">Sebarozvoj</a>
+            <a href="/sk/Technologie.html">Technológie</a>
+            <a href="/sk/Knihy.html" class="active">Knihy</a>
+            <a href="/sk/Fotografie.html">Fotografie</a>
+            <a href="/sk/Kontakt.html">Kontakt</a>
+        </nav>
+
+        <section class="section quote">
+            <p>„Knihy nám pomáhajú pochopiť svet a sami seba, otvárajú nám nové možnosti a inšpirujú nás k lepšiemu
+                životu.“ – Neznámy autor.“</p>
+        </section>
+
+        <!-- SEKCIE -->
+        <section class="section book">
+            <img src="/images/book1.jpg" alt="7 návykov skutočne efektívnych ľudí">
+
+            <div class="book-info">
+                <h3>7 návykov skutočne efektívnych ľudí</h3>
+                <p>
+                    Svetový bestseller Stephena R. Coveyho pomohol miliónom ľudí na celom svete osvojiť si zásady, vďaka
+                    ktorým dokázali zmeniť svoj súkromný i pracovný život k lepšiemu. Uznávaný odborník na vedenie ľudí
+                    a poradca mnohých svetovýc...
+                </p>
+
+                <a href="/sk/book1.html" class="btn">Čítať ďalej</a>
+            </div>
+        </section>
+
+        <section class="section book">
+            <img src="/images/book2.jpg" alt="Dosiahnuť nemožné">
+
+            <div class="book-info">
+                <h3>Dosiahnúť nemožné</h3>
+                <p>
+                    AKO DOSIAHNUŤ NEMOŽNÉ A EŠTE NIEČO NAVYŠE Čo je potrebné na to, aby sme dosiahli nemožné a dokázali
+                    prekonať všetky prekážky, ale aj vlastné očakávania? Alebo si rovno splnili najväčšie sny a
+                    premenili ich na skutočnosť?
+                </p>
+
+                <a href="/sk/book2.html" class="btn">Čítať ďalej</a>
+            </div>
+        </section>
+
+        <section class="section book">
+            <img src="/images/book3.jpg" alt="Kniha piatich kruhov">
+
+            <div class="book-info">
+                <h3>Kniha piatich kruhov</h3>
+                <p>
+                    Kniha pěti kruhů je středověké dílo o cestě meče - kendó, jehož autorem je legendární japonský
+                    samuraj, kengo Šingen Musaši No Kami Fudžiwara No Genšin (1548 - 1645). Tento spis dodnes studují
+                    jak mistři kendó, tak japonští manažeři.
+                </p>
+
+                <a href="/sk/book3.html" class="btn">Čítať ďalej</a>
+            </div>
+        </section>
+
+
+
+
+
+        <!--*/*/* <section class="section">
+        <h2>Nadpis sekcie 2</h2>
+        <p>Tu bude obsah sekcie 2...</p>
+    </section>*/-->
+
+        <section class="section quote">
+            <p>„V prípade dobrých kníh, nejde o to, koľkými z nich prejdete skrz na skrz. Ide o to, koľko z nich prejde
+                skrz na skrz priamo do vás.”- Mortimer J. Adler“</p>
+        </section>
+
+
+    </div>
+
+    <section class="section newsletter-section">
+        <h2>Odoberaj novinky</h2>
+
+        <form id="newsletter-form" class="newsletter-form">
+            <input type="email" name="email" placeholder="Tvoj e-mail" required>
+            <button type="submit">Prihlásiť</button>
+            <p id="newsletterStatus"></p>
+        </form>
+
+        <p class="newsletter-note">
+            Kliknutím na „Prihlásiť“ súhlasíš so spracovaním osobných údajov.
+        </p>
+
+        <div class="social-links">
+           <a href="https://www.linkedin.com/in/tomas-oriescik/" target="_blank" aria-label="LinkedIn">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="https://www.instagram.com/tomasoriescik/tomasoriescik/" target="_blank" aria-label="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+        </div>
+
+
+        <script src="/js/newsletter.js"></script>
+         <script src="/js/lang-switcher.js"></script>
+</body>
+
+</html>

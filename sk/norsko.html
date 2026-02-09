@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="sk">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Nórsko</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- LANGUAGE SWITCHER -->
+    <div id="lang-switcher">
+        <a id="lang-link" href="#" title="Zmeniť jazyk">
+            <img id="lang-flag" src="" alt="Vlajka">
+        </a>
+    </div>
+
+    <div class="container">
+
+        <!-- HERO -->
+        <header>
+            <div class="hero">
+                <img src="/profile.jpg" alt="Moja fotka" class="profile-img">
+                <div class="hero-text">
+                     <h1>Nórsko </h1>
+                <p class="subtitle">Zábery z môjho života</p>
+                </div>
+                <div class="hero-social">
+                    <a href="https://www.linkedin.com/in/tomas-oriescik/" target="_blank">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <span class="divider">|</span>
+                    <a href="https://www.instagram.com/tomasoriescik/" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+        </header>
+
+        <!-- MENU -->
+        <nav class="menu">
+            <a href="/sk/index.html">O mne</a>
+            <a href="/sk/Clanky.html">Články</a>
+            <a href="/sk/Lezenie.html">Lezenie</a>
+            <a href="/sk/Sebarozvoj.html">Sebarozvoj</a>
+            <a href="/sk/Technologie.html">Technológie</a>
+            <a href="/sk/Knihy.html">Knihy</a>
+            <a href="/sk/Fotografie.html" class="active">Fotografie</a>
+            <a href="/sk/Kontakt.html">Kontakt</a>
+        </nav>
+
+        <!-- GALÉRIA -->
+        <h2>Nórsko</h2>
+        <div class="gallery1-grid">
+            <img class="gallery1-item" src="/images/archiv/norsko/norsko1.JPEG" alt="Trollwall" data-caption="Trollwall v plnej kráse">
+            <img class="gallery1-item" src="/images/archiv/norsko/norsko2.JPEG" alt="Hory v hmle" data-caption="Vyhliadka Helvetten">
+            <img class="gallery1-item" src="/images/archiv/norsko/norsko3.JPEG" alt="Nórsko" data-caption="Pohľad zo steny do údolia Trollstigen a Romsdalenu">
+            <img class="gallery1-item" src="/images/archiv/norsko/norsko4.JPEG" alt="Nórsko" data-caption="Večerné Åndalsnes">
+            <img class="gallery1-item" src="/images/archiv/norsko/norsko5.JPEG" alt="Nórsko" data-caption="Západ slnka vo Valderøy">
+            <img class="gallery1-item" src="/images/archiv/norsko/norsko6.JPEG" alt="Nórsko" data-caption="Magerholm">
+            <img class="gallery1-item" src="/images/archiv/norsko/norsko7.JPEG" alt="Nórsko" data-caption="Fjord a mesiac vo Volde">
+            <img class="gallery1-item" src="/images/archiv/norsko/norsko8.JPEG" alt="Nórsko" data-caption="Ráno pri Sogndal">
+        </div>
+
+        <!-- LIGHTBOX -->
+        <div id="lightbox">
+            <span class="close">×</span>
+            <img class="lightbox-img">
+            <p class="lightbox-caption"></p>
+            <span class="prev">❮</span>
+            <span class="next">❯</span>
+        </div>
+
+        <!-- NEWSLETTER -->
+        <section class="section newsletter-section">
+            <h2>Odoberaj novinky</h2>
+            <form id="newsletter-form" class="newsletter-form">
+                <input type="email" name="email" placeholder="Tvoj e-mail" required>
+                <button type="submit">Prihlásiť</button>
+                <p id="newsletterStatus"></p>
+            </form>
+            <p class="newsletter-note">
+                Kliknutím na „Prihlásiť“ súhlasíš so spracovaním osobných údajov.
+            </p>
+
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/tomas-oriescik/" target="_blank" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://www.instagram.com/tomasoriescik/" target="_blank" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+        </section>
+
+    </div>
+
+    <script src="/js/lightbox.js"></script>
+    <script src="/js/newsletter.js"></script>
+    <script src="/js/lang-switcher.js"></script>
+</body>
+
+</html>

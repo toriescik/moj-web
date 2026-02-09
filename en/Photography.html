@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Photography</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<!-- LANGUAGE SWITCHER -->
+<div id="lang-switcher">
+    <a id="lang-link" href="#" title="Switch language">
+        <img id="lang-flag" src="" alt="Flag">
+    </a>
+</div>
+
+<body>
+
+    <div class="container">
+
+        <!-- HERO -->
+        <header>
+            <div class="hero">
+                <img src="/profile.jpg" alt="My photo" class="profile-img">
+                <div class="hero-text">
+                    <h1>Photo</h1>
+                    <p class="subtitle">Pictures from my life</p>
+                </div>
+                <div class="hero-social">
+                    <a href="https://www.linkedin.com/in/tomas-oriescik/" target="_blank">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <span class="divider">|</span>
+                    <a href="https://www.instagram.com/tomasoriescik/" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+        </header>
+
+        <!-- MENU -->
+        <nav class="menu">
+            <a href="/en/index.html">About Me</a>
+            <a href="/en/Articles.html">Articles</a>
+            <a href="/en/Climbing.html">Climbing</a>
+            <a href="/en/PersonalGrowh.html">Personal Growth</a>
+            <a href="/en/Technology.html">Technology</a>
+            <a href="/en/Books.html">Books</a>
+            <a href="/en/Photography.html" class="active">Photography</a>
+            <a href="/en/Contact.html">Contact</a>
+        </nav>
+
+        <!-- QUOTE -->
+        <section class="section quote">
+            <p>"There is only one way to stop time: photography."</p>
+        </section>
+
+        <!-- PHOTO ALBUMS -->
+        <section class="albums">
+
+            <p><span class="highlight1">An archive of my photos capturing moments I was lucky to experience.</span></p><br>
+
+            <div class="album-grid">
+                <a href="/en/norway.html" class="album-card">
+                    <img src="/images/archiv/norsko.JPEG" alt="Norway">
+                    <div class="album-info">
+                        <span class="album-category">NATURE</span>
+                        <h3>Norway →</h3>
+                    </div>
+                </a>
+
+              
+        <!--  <a href="/en/trollstigen.html" class="album-card">
+                    <img src="/images/archiv/trollstigen.JPEG" alt="Trollstigen">
+                    <div class="album-info">
+                        <span class="album-category">NATURE</span>
+                        <h3>Trollstigen →</h3>
+                    </div>
+                </a>-->
+
+                <a href="/en/leonidio.html" class="album-card">
+                    <img src="/images/archiv/leonidio.JPEG" alt="Leonidio">
+                    <div class="album-info">
+                        <span class="album-category">CLIMBING</span>
+                        <h3>Leonidio →</h3>
+                    </div>
+                </a>
+
+                <a href="/en/baileherculane.html" class="album-card">
+                    <img src="/images/archiv/baileherculane.jpg" alt="Baile Herculane">
+                    <div class="album-info">
+                        <span class="album-category">CLIMBING</span>
+                        <h3>Baile Herculane →</h3>
+                    </div>
+                </a>
+
+                <a href="/en/athens.html" class="album-card">
+                    <img src="/images/archiv/ateny.JPEG" alt="Athens">
+                    <div class="album-info">
+                        <span class="album-category">TRAVEL</span>
+                        <h3>Athens →</h3>
+                    </div>
+                </a>
+
+                <a href="/en/nature.html" class="album-card">
+                    <img src="/images/archiv/priroda.JPEG" alt="Nature">
+                    <div class="album-info">
+                        <span class="album-category">NATURE</span>
+                        <h3>Nature →</h3>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- LIGHTBOX -->
+        <div id="lightbox">
+            <span class="close">&times;</span>
+            <span class="prev">&#10094;</span>
+            <img class="lightbox-img" src="">
+            <span class="next">&#10095;</span>
+        </div>
+
+        <!-- NEWSLETTER -->
+        <section class="section newsletter-section">
+            <h2>Subscribe to News</h2>
+            <form id="newsletter-form" class="newsletter-form">
+                <input type="email" name="email" placeholder="Your email" required>
+                <button type="submit">Subscribe</button>
+                <p id="newsletterStatus"></p>
+            </form>
+            <p class="newsletter-note">
+                By clicking "Subscribe," you agree to the processing of personal data.
+            </p>
+
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/tomas-oriescik/" target="_blank" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://www.instagram.com/tomasoriescik/" target="_blank" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+
+            <div id="lightbox">
+                <span class="close">×</span>
+                <img class="lightbox-img">
+                <p class="lightbox-caption"></p>
+                <span class="prev">❮</span>
+                <span class="next">❯</span>
+            </div>
+
+            <script src="/js/lightbox.js"></script>
+            <script src="/js/newsletter.js"></script>
+            <script src="/js/lang-switcher.js"></script>
+</body>
+
+</html>

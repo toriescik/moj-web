@@ -1,0 +1,135 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Contact</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<div id="lang-switcher">
+        <a id="lang-link" href="#" title="Switch language">
+            <img id="lang-flag" src="" alt="Flag">
+        </a>
+    </div>
+
+<body>
+
+    <div class="container">
+
+        <!-- HERO -->
+        <header>
+            <div class="hero">
+                <img src="/profile.jpg" alt="My photo" class="profile-img">
+                <div class="hero-text">
+                    <h1>Where can you find me?</h1>
+                    <p class="subtitle">Feel free to contact me</p>
+                </div>
+                <div class="hero-social">
+                    <a href="https://www.linkedin.com/in/tomas-oriescik/" target="_blank">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <span class="divider">|</span>
+                    <a href="https://www.instagram.com/tomasoriescik/" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+        </header>
+
+        <!-- MENU -->
+        <nav class="menu">
+            <a href="/en/index.html">About Me</a>
+            <a href="/en/Articles.html">Articles</a>
+            <a href="/en/Climbing.html">Climbing</a>
+            <a href="/en/PersonalGrowth.html">Personal Growth</a>
+            <a href="/en/Technology.html">Technology</a>
+            <a href="/en/Books.html">Books</a>
+            <a href="/en/Photography.html">Photography</a>
+            <a href="/en/Contact.html" class="active">Contact</a>
+        </nav>
+
+        <!-- CONTACT SECTION -->
+        <section class="section contact-section">
+            <div class="contact-grid">
+
+                <a href="mailto:toriescik@gmail.com" class="contact-item">
+                    <span class="icon">📧</span>
+                    <p>
+                        <span>Email</span>
+                        toriescik@gmail.com
+                    </p>
+                </a>
+
+                <a href="tel:+421911837828" class="contact-item">
+                    <span class="icon">📞</span>
+                    <p>
+                        <span>Phone</span>
+                        +421 911 837 828
+                    </p>
+                </a>
+
+                <a href="https://www.google.com/maps/place/S%C3%BA%C4%BEovsk%C3%A9+skaly/@49.1687194,18.5733089,7661m/data=!3m1!1e3!4m6!3m5!1s0x471461679bf0 dffd:0xd19717ab5e07ff84!8m2!3d49.1777123!4d18.5905797!16s%2Fg%2F11bc6dbjxd?entry=ttu&g_ep=EgoyMDI2MDIwNC4wIKXMDSoKLDEwMDc5MjA2OUgBUAM%3D" 
+class="contact-item" target="_blank"> 
+<span class="icon">📍</span> 
+<p>
+<span>Address</span>
+I like to spend time in this place
+</p>
+</a>
+
+</div>
+</section>
+
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d33361.42582152664!2d18.573308944257157!3d49.16871940024959!2m3!1f0!2f0!3f0!3m2!1i1 024!2i768!4f13.1!3m3!1m2!1s0x471461679bf0dffd%3A0xd19717ab5e07ff84!2zU 8O6xL5vdnNrw6kgc2thbHk!5e1!3m2!1ssk!2ssk!4v1770578685907!5m2!1ssk!2ssk" class="contact-map" width="600" height="450" ​​style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        <!-- CONTACT FORM -->
+        <form id="formular" class="formular-form">
+            <h2>Contact Us</h2>
+            <input type="text" name="name" placeholder="Name" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <textarea name="message" placeholder="Message" required></textarea>
+            <button type="submit">Send</button>
+            <p id="formStatus"></p>
+        </form>
+
+        <!-- QUOTE -->
+        <section class="section quote">
+            <p>"Do not wait; the right time will never come. Start where you are and use whatever tools you have at your disposal, and over time you will find much better tools." – George Herbert</p>
+        </section>
+
+    </div>
+
+    <!-- NEWSLETTER -->
+    <section class="section newsletter-section">
+        <h2>Subscribe to News</h2>
+
+        <form id="newsletter-form" class="newsletter-form">
+            <input type="email" name="email" placeholder="Your email" required>
+            <button type="submit">Subscribe</button>
+            <p id="newsletterStatus"></p>
+        </form>
+
+        <p class="newsletter-note">
+            By clicking "Subscribe," you agree to the processing of personal data.
+        </p>
+
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/tomas-oriescik/" target="_blank" aria-label="LinkedIn">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="https://www.instagram.com/tomasoriescik/" target="_blank" aria-label="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+        </div>
+    </section>
+
+    <script src="/js/contact-form.js"></script>
+    <script src="/js/newsletter.js"></script>
+    <script src="/js/lang-switcher.js"></script>
+
+</body>
+
+</html>
