@@ -1,5 +1,3 @@
-console.log("contact-form.js loaded");
-
 const contactForm = document.getElementById("formular");
 const contactStatus = document.getElementById("formStatus");
 
@@ -16,7 +14,7 @@ if (contactForm) {
     console.log("📤 CONTACT:", data);
 
     try {
-      const res = await fetch("http://localhost:3000/contact", {
+      const res = await fetch("/contact", {  // <--- zmenené
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(data),

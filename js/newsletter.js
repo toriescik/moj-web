@@ -1,5 +1,3 @@
-console.log("newsletter.js loaded");
-
 const newsletterForm = document.getElementById("newsletter-form");
 const newsletterStatus = document.getElementById("newsletterStatus");
 
@@ -11,7 +9,7 @@ if (newsletterForm) {
     console.log("📤 NEWSLETTER:", email);
 
     try {
-      const res = await fetch("http://localhost:3000/newsletter", {
+      const res = await fetch("/newsletter", {  // <--- zmenené
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ email }),
