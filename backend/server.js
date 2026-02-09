@@ -64,8 +64,8 @@ app.post("/newsletter", (req, res) => {
 });
 
 // ===== FALLBACK pre frontend (SPA alebo klasický web) =====
-app.get("/*", (req, res) => {
-  res.sendFile(path.join(__dirname, "..", "index.html"));
+app.get(/.*/, (req, res) => {
+  res.sendFile(path.join(__dirname, "../index.html"));
 });
 
 app.listen(PORT, () => {
