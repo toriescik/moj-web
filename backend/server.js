@@ -46,10 +46,12 @@ app.post("/newsletter", (req, res) => {
 });
 
 // Fallback – podľa URL na správny jazyk
-app.get("/en/*", (req, res) => {
+// Fallback pre EN
+app.get(/^\/en(\/.*)?$/, (req, res) => {
   res.sendFile(path.join(enPath, "index.html"));
 });
-app.get("/sk/*", (req, res) => {
+// Fallback pre SK
+app.get(/^\/sk(\/.*)?$/, (req, res) => {
   res.sendFile(path.join(skPath, "index.html"));
 });
 
