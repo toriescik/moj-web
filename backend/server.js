@@ -8,66 +8,56 @@ app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-// ⚡ Statické súbory – servuje všetko z root-u projektu
-app.use(express.static(path.join(__dirname, ".."))); 
-// ".." = root projektu, kde máš index.html, js/, images/, video/ atď.
+// Statické súbory
+const skPath = path.join(__dirname, "sk");
+const enPath = path.join(__dirname, "en");
 
-// PORT z hostingu
-const PORT = process.env.PORT || 3000;
+// Slúži súbory pre /en a /sk
+app.use("/en", express.static(enPath));
+app.use("/sk", express.static(skPath));
 
-// CSV súbory – ukladáme ich do "data" adresára
-const dataDir = path.join(__dirname, "data");
-if (!fs.existsSync(dataDir)) fs.mkdirSync(dataDir);
+// CSV súbory
+const csvFile = path.join(__dirname, "spravy.csv");
+const newsletterFile = path.join(__dirname, "newsletter.csv");
 
-const csvFile = path.join(dataDir, "spravy.csv");
-const newsletterFile = path.join(dataDir, "newsletter.csv");
+if (!fs.existsSync(csvFile)) fs.writeFileSync(csvFile, "name,email,message,date\n");
+if (!fs.existsSync(newsletterFile)) fs.writeFileSync(newsletterFile, "email,date\n");
 
-// vytvor CSV súbory, ak neexistujú
-if (!fs.existsSync(csvFile)) {
-  fs.writeFileSync(csvFile, "name,email,message,date\n");
-}
-if (!fs.existsSync(newsletterFile)) {
-  fs.writeFileSync(newsletterFile, "email,date\n");
-}
-
-// ===== CONTACT FORM =====
+// Kontakt formulár
 app.post("/contact", (req, res) => {
   const { name, email, message } = req.body;
   const date = new Date().toISOString();
-
-  const safeRow = `"${name || ""}","${email || ""}","${(message || "").replace(/"/g, '""')}","${date}"\n`;
-  fs.appendFile(csvFile, safeRow, (err) => {
-    if (err) {
-      console.error("❌ Chyba zápisu správy:", err);
-      return res.status(500).json({ message: "Chyba servera" });
-    }
-    console.log("📩 Nová správa:", safeRow.trim());
+  const row = `"${name || ""}","${email || ""}","${(message || "").replace(/"/g, '""')}","${date}"\n`;
+  fs.appendFile(csvFile, row, err => {
+    if (err) return res.status(500).json({ message: "Chyba servera" });
     res.json({ message: "Správa bola úspešne odoslaná ✅" });
   });
 });
 
-// ===== NEWSLETTER =====
+// Newsletter
 app.post("/newsletter", (req, res) => {
   const { email } = req.body;
   const date = new Date().toISOString();
-
   const row = `"${email || ""}","${date}"\n`;
-
-  fs.appendFile(newsletterFile, row, (err) => {
-    if (err) {
-      console.error("❌ Chyba zápisu newsletteru:", err);
-      return res.status(500).json({ message: "Chyba servera" });
-    }
-    console.log("📧 Nový newsletter:", email);
+  fs.appendFile(newsletterFile, row, err => {
+    if (err) return res.status(500).json({ message: "Chyba servera" });
     res.json({ message: "Ďakujeme za prihlásenie ✅" });
   });
 });
 
-// ===== FALLBACK pre frontend (SPA alebo klasický web) =====
-app.get(/.*/, (req, res) => {
-  res.sendFile(path.join(__dirname, "../index.html"));
+// Fallback – podľa URL na správny jazyk
+app.get("/en/*", (req, res) => {
+  res.sendFile(path.join(enPath, "index.html"));
+});
+app.get("/sk/*", (req, res) => {
+  res.sendFile(path.join(skPath, "index.html"));
 });
 
-app.listen(PORT, () => {
-  console.log(`🚀 Server beží na porte ${PORT}`);
+// Pre root URL, môžeš redirect na SK
+app.get("/", (req, res) => {
+  res.redirect("/sk");
 });
+
+// Port
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => console.log(`🚀 Server beží na porte ${PORT}`));
