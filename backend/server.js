@@ -8,17 +8,16 @@ app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-// Statické súbory zo root priečinkov
+// Root statické súbory (CSS, JS, images, video, files atď.)
+app.use(express.static(path.join(__dirname, ".."))); // root projektu
+
+// SK/EN statické cesty
 const skPath = path.join(__dirname, "../sk");
 const enPath = path.join(__dirname, "../en");
 
-app.use("/sk", express.static(skPath));
-app.use("/en", express.static(enPath));
-
-// CSV súbory v backend/
+// CSV súbory (v backend/)
 const csvFile = path.join(__dirname, "spravy.csv");
 const newsletterFile = path.join(__dirname, "newsletter.csv");
-
 if (!fs.existsSync(csvFile)) fs.writeFileSync(csvFile, "name,email,message,date\n");
 if (!fs.existsSync(newsletterFile)) fs.writeFileSync(newsletterFile, "email,date\n");
 
@@ -56,11 +55,11 @@ app.get(/^\/sk(\/.*)?$/, (req, res) => {
   res.sendFile(path.join(skPath, "index.html"));
 });
 
-// Root URL presmeruje na SK
+// Root presmeruje na SK
 app.get("/", (req, res) => {
   res.redirect("/sk");
 });
 
-// Spustenie servera
+// Port
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => console.log(`🚀 Server beží na porte ${PORT}`));
